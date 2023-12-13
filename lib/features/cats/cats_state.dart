@@ -16,8 +16,14 @@ final class CatsError extends CatsListenState {
   CatsError({required this.error});
 }
 
-final class CatsData extends CatsBuildState {
+final class FavouritesData extends CatsBuildState {
   final List<CatsModel> cats;
 
-  CatsData({required this.cats});
+  FavouritesData({required this.cats});
+}
+
+final class CatData extends CatsBuildState {
+  final List<CatsModel> cat;
+
+  CatData({required this.cat});
 }

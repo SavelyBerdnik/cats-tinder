@@ -7,12 +7,26 @@ class CatsCubit extends Cubit<CatsState> {
 
   final _service = CatsService();
 
-  Future<void> getData() async {
+  Future<void> getFavourites() async {
     try {
       emit(CatsLoading());
-      final cats = await _service.getCats();
+      final cats = await _service.getFavoritesCats();
       emit(
-        CatsData(cats: cats),
+        FavouritesData(cats: cats),
+      );
+    } catch (e) {
+      emit(
+        CatsError(error: e.toString()),
+      );
+    }
+  }
+
+  Future<void> getCat() async {
+    try {
+      emit(CatsLoading());
+      final cat = await _service.getCat();
+      emit(
+        CatData(cat: cat),
       );
     } catch (e) {
       emit(

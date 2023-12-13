@@ -27,9 +27,9 @@ class _LoginPageState extends State<LoginPage> {
                 padding: const EdgeInsets.all(8.0),
                 child: TextField(
                   controller: emailController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: 'Enter your email',
-                    contentPadding: const EdgeInsets.all(10.0),
+                    contentPadding: EdgeInsets.all(10.0),
                     hintStyle: TextStyle(
                       color: Colors.blueGrey, fontWeight: FontWeight.bold)
                     ),
@@ -39,9 +39,9 @@ class _LoginPageState extends State<LoginPage> {
                 padding: const EdgeInsets.all(8.0),
                 child: TextField(
                   controller: passwordController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                       hintText: 'Enter your password',
-                      contentPadding: const EdgeInsets.all(10.0),
+                      contentPadding: EdgeInsets.all(10.0),
                       hintStyle: TextStyle(
                           color: Colors.blueGrey, fontWeight: FontWeight.bold)
                   ),

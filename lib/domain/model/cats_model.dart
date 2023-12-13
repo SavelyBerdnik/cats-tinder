@@ -1,5 +1,4 @@
 import 'package:cats_tinder/data/model/cats_dto.dart';
-import 'package:cats_tinder/data/repository/cats_repository.dart';
 
 class CatsModel {
   final List breeds;

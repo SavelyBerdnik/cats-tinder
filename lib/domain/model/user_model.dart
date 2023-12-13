@@ -12,8 +12,8 @@ class UserModel {
 });
 
   factory UserModel.fromJson(Map<String, dynamic> json) => UserModel(
-    email: json['email'] as String,
-    password: json['password'] as String,
-    isAuth: json['isAuth'] as Bool,
+    email: json['email'],
+    password: json['password'],
+    isAuth: json['isAuth'],
   );
 }
